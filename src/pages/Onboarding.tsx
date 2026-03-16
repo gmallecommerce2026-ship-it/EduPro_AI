@@ -6,7 +6,7 @@ import '../App.css';
 import { useNavigate } from 'react-router-dom';
 
 // Thay 'YOUR_GEMINI_API_KEY' bằng API key thật lấy từ Google AI Studio
-const API_KEY = 'AIzaSyCa39VZEpfv6OrqiMQl0CKHdFCgBc01bHY'; 
+const API_KEY = 'AIzaSyA4wmG3ZmgN54VFjuBsO9B75hJEfCandvY'; 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export default function Onboarding() {

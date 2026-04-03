@@ -1141,3 +1141,18 @@ body {
   object-fit: contain;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.1); /* Đổ bóng tạo hiệu ứng sách thật */
 }
+/* --- Sửa lỗi không cuộn được cho trang chủ --- */
+.udemy-layout {
+  height: 100vh;
+  overflow-y: auto; /* Cho phép cuộn dọc nội dung bên trong */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-app);
+}
+
+/* Đảm bảo thanh điều hướng (Navbar) luôn dính ở trên cùng khi cuộn */
+.udemy-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Cần có z-index cao để không bị các thẻ khóa học đè lên khi cuộn */
+}
